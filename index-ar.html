@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="/assets/img/shayakah/logo-shayakah.png">
+  <title>Shayakah</title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="/assets/css/soft-design-system-pro.css?v=1.1.0" rel="stylesheet" />
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet">
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet">
+  <link href="/assets/css/soft-design-system-pro.css" rel="stylesheet">
+  <link href="/assets/css/site.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <style>
+    #coin {
+      position: relative;
+      width: 5rem;
+      height: 3rem;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      -webkit-perspective: 1000px;
+      animation: turn 10s infinite forwards;
+      animation-iteration-count: 2;
+      animation-delay: 3s;
+    }
+
+    #coin div {
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .heads {
+      /*width: 3rem !important;*/
+      /*height: 2rem !important;*/
+      background-image: url("/assets/img/shayakah/logo-shayakah.png");
+      background-repeat: no-repeat;
+    }
+
+    .tails {
+      background-image: url("/assets/img/shayakah/logo-shayakah.png");
+      background-repeat: no-repeat;
+      transform: rotateY(180deg);
+    }
+
+    @keyframes turn {
+      0% {
+        transform: rotateY(0deg);
+      }
+
+      25% {
+        transform: rotateY(180deg);
+      }
+
+      75% {
+        transform: rotateY(180deg);
+      }
+
+      100% {
+        transform: rotateY(0deg);
+      }
+    }
+
+
+
+    .card.card-background.bg-black:after {
+    position: absolute;
+    top: 230px;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    content: "";
+    background: rgba(0,0,0,.4);
+    border-radius: 1rem;
+}
+
+
+
+  </style>
+
+  <header class="fixed-top z-index-sticky top-0">
+    <nav class="navbar navbar-expand-lg blur-modern z-index-3 navbar-nav navbar-nav-hover mx-auto">
+      <div class="container px-0">
+        <a class="navbar-brand font-weight-bolder ms-sm-3"
+          href="https://demos.creative-tim.com/marketplace/soft-ui-design-system-pro/presentation.html "
+          rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+          <div id="coin">
+            <div id="heads" class="heads"></div>
+            <div id="tails" class="tails"></div>
+          </div>
+        </a>
+        <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mt-2">
+                        <span class="navbar-toggler-bar bar1"></span>
+                        <span class="navbar-toggler-bar bar2"></span>
+                        <span class="navbar-toggler-bar bar3"></span>
+                    </span>
+        </button>
+        <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+          <ul class="navbar-nav navbar-nav-hover mx-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                الرئيسية
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                من نحن
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                الخدمات
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex"><a class="btn btn-sm bg-shayakah-light mb-0 me-2" href="/index.html">English</a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main role="main" class="flex-shrink-0">
+
+  <!-- -------- START HEADER  ------- -->
+  <header style="margin-top: 8rem;">
+    <div class="page-header min-vh-85">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 my-auto col-md-7 d-flex justify-content-start text-md-end text-center flex-column mt-sm-4 mt-6">
+            <h1 class="text-gradient text-warning mb-0">جرب تجربة جديدة</h1>
+            <h1 class="mb-4">للمتسوقين لديك</h1>
+            <p class="lead">شياكة هي شركة تجمع محلات الملابس الرائعة المتواجدة في الأسواق ذات الثقة والمصداقية لنقدم لك تجربة تسوق فريدة.</p>
+            <div class="buttons">
+              <button type="button" class="btn bg-shayakah-dark mt-4">انضم الينا</button>
+              <button type="button" class="btn text-muted shadow-none mt-4">اقرأ المزيد</button>
+            </div>
+          </div>
+          <div class="col-lg-7 ps-5 pe-0">
+            <div class="row">
+              <div class="col-lg-3 col-6">
+                <img class="w-100 border-radius-lg shadow mt-0 mt-lg-7" src="/assets/img/shayakah/image-shayakah/man4.jpg" alt="">
+              </div>
+              <div class="col-lg-3 col-6">
+                <img class="w-100 border-radius-lg shadow" src="/assets/img/shayakah/image-shayakah/children4.jpg" alt="">
+                <img class="w-100 border-radius-lg shadow mt-4" src="/assets/img/shayakah/image-shayakah/man2.jpg" alt="">
+              </div>
+              <div class="col-lg-3 col-6">
+                <img class="w-100 border-radius-lg shadow mt-0 mt-lg-5" src="/assets/img/shayakah/image-shayakah/woman1.png" alt="">
+                <img class="w-100 border-radius-lg shadow mt-4" src="/assets/img/shayakah/image-shayakah/woman7.jpg" alt="">
+              </div>
+              <div class="col-lg-3 col-6">
+                <img class="w-100 border-radius-lg shadow mt-3" src="/assets/img/shayakah/image-shayakah/bag2.jpg" alt="">
+                <img class="w-100 border-radius-lg shadow mt-4" src="/assets/img/shayakah/image-shayakah/accessories.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="py-3 pt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-12 mb-md-0 mb-4 text-center">
+          <h2 class="mb-3 text-dark"> رؤيتنا</h2>
+          <p class="lead mb-md-5 mb-4">ان نكون أكثر الوجهات المفضلة لتسوق الملابس وتوفير تسوق أكثر امانا واقل تكلفة وأسرع توصيل ويحظى بثقة أكبر.
+
+            <!-- "To be the most preferred destinations for clothes shopping, providing a safer,<br/> cost-effective, and faster shopping experience with greater trust." -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="features-3 py-7">
+
+    <!-- Banner image shayakah -->
+    <div class="container mt-sm-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner border-radius-sm">
+          <div class="carousel-item active">
+            <div class="page-header min-vh-50 my-sm-3 mb-3 border-radius-xl" style="background-image: url('/assets/img/shayakah/image-shayakah/bag.jpg');"></div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="page-header min-vh-50 my-sm-3 mb-3 border-radius-xl" style="background-image: url('/assets/img/shayakah/image-shayakah/men.jpg');"></div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="page-header min-vh-50 my-sm-3 mb-3 border-radius-xl" style="background-image: url('/assets/img/shayakah/image-shayakah/children.jpg');"></div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="page-header min-vh-50 my-sm-3 mb-3 border-radius-xl" style="background-image: url('/assets/img/shayakah/image-shayakah/perfume.jpg');"></div>
+          </div>
+
+        </div>
+
+        <!-- pre and next -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- Elevate Your Style, Delight Your Senses -->
+    <div class="container">
+      <div class="row text-center justify-content-center pt-10">
+        <div class="col-lg-6">
+          <h2>ارتقِ بأسلوبك،</h2>
+          <p>
+            استكشف مجموعاتنا المختارة من الأزياء والإكسسوارات والعطور، المصممة لتعزيز نمط حياتك.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+    
+          <div class="carousel-inner border-radius-sm">
+            <div class="carousel-item active">
+    
+              <div class="row mt-5">
+                <div class="col-lg-4 mb-lg-0 mb-4">
+                  <!-- Start Card Blog Fullbackground - text centered -->
+                  <a href="javascript:;">
+                    <div class="card card-background bg-black move-on-hover mb-4">
+                      <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/man5.jpg')"></div>
+                      <div class="card-body pt-12  ">
+                        <h4 class="text-white">Man</h4>
+                        <p>Elevate your masculinity with our versatile men's collection, offering classic and contemporary fashion for every occasion.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- End Card Blog Fullbackground - text centered -->
+                </div>
+                <div class="col-lg-4 mb-lg-0 mb-4">
+                  <!-- Start Card Blog Fullbackground - text centered -->
+                  <a href="javascript:;">
+                    <div class="card card-background bg-black move-on-hover mb-4">
+                      <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/woman1.png')"></div>
+                      <div class="card-body pt-12">
+                        <h4 class="text-white">Woman</h4>
+                        <p>Discover a world of elegance and empowerment in our women's collection, where style meets confidence.</p>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- End Card Blog Fullbackground - text centered -->
+                </div>
+                <div class="col-lg-4">
+                  <!-- Start Card Blog Fullbackground - text centered -->
+                  <a href="javascript:;">
+                    <div class="card card-background bg-black move-on-hover mb-4">
+                      <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/bag5.jpg')"></div>
+                      <div class="card-body pt-12">
+                        <h4 class="text-white">Bag</h4>
+                        <p>Carry your essentials in style with our exquisite range of bags, blending fashion and functionality seamlessly</p>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- End Card Blog Fullbackground - text centered -->
+                </div>
+              </div>
+    
+            </div>
+    
+            <div class="carousel-item">
+              <div class="row mt-5">
+                <div class="col-lg-4 mb-lg-0 mb-4">
+                  <a href="javascript:;">
+                    <div class="card card-background bg-black move-on-hover">
+                      <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/children6.jpg')"></div>
+                      <div class="card-body pt-12">
+                        <h4 class="text-white">Children</h4>
+                        <p>Explore vibrant and comfortable clothing for kids, designed to inspire their curiosity and creativity.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 mb-lg-0 mb-4">
+                  <a href="javascript:;">
+                    <div class="card card-background bg-black move-on-hover">
+                      <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/accessories.webp')"></div>
+                      <div class="card-body pt-12">
+                        <h4 class="text-white">Accessories</h4>
+                        <p>Smart money is just dumb money that’s been through a crash.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4">
+                  <a href="javascript:;">
+                    <div class="card card-background bg-black move-on-hover">
+                      <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/parfan.jpg')"></div>
+                      <div class="card-body pt-12">
+                        <h4 class="text-white">Perfume</h4>
+                        <p>Evoke emotions and leave a lasting impression with our curated selection of captivating fragrances.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+    
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" style="color: red;" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <!--    Sell on your App-->
+  <section class="py-3">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-8 mx-auto mt-5">
+          <div class="card card-background min-vh-70">
+            <div class="full-background" style="background-image: url(https://yshere.com/img/night-mobile.jpg);"></div>
+            <div class="card-body pt-10">
+              <h2 class="text-white">Sell on your App</h2>
+              <p>Run your business wherever business takes you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="pt-5 pb-0">
+  <div class="container">
+
+    <div class="row text-center justify-content-center pt-10">
+      <div class="col-lg-6">
+        <h2>Follow us </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="card card-blog card-plain">
+          <div class="position-relative">
+            <a class="d-block blur-shadow-image" href="javascript:;">
+              <img src="/assets/img/shayakah/facebook_shayakah.jpg" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+            </a>
+          </div>
+          <div class="card-body px-1 pt-3">
+            <a href="javascript:;">
+              <h5>
+                Facebook Shayakah
+              </h5>
+            </a>
+            <p>
+              Siri&#39;s latest trick is offering a hands-free TV viewing experience, that will allow consumers to turn on or off their television, change inputs, fast forward.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card card-blog card-plain">
+          <div class="position-relative">
+            <a class="d-block blur-shadow-image" href="javascript:;">
+              <img src="/assets/img/shayakah/instagram.png" alt="img-blur-shadow" class="img-fluid shadow border-radius-lg">
+            </a>
+          </div>
+          <div class="card-body px-1 pt-3">
+            <a href="javascript:;">
+              <h5>
+                Instagram Shayakah
+              </h5>
+            </a>
+            <p>
+              Siri&#39;s latest trick is offering a hands-free TV viewing experience, that will allow consumers to turn on or off their television, change inputs, fast forward.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card card-blog card-plain">
+          <div class="position-relative">
+            <a class="d-block blur-shadow-image" href="javascript:;">
+              <img src="/assets/img/shayakah/TikTok.jpg.webp" alt="TikTok" class="img-fluid shadow border-radius-lg">
+            </a>
+          </div>
+          <div class="card-body px-1 pt-3">
+            <a href="javascript:;">
+              <h5>
+                TikTok Shayakah
+              </h5>
+            </a>
+            <p>
+              Siri&#39;s latest trick is offering a hands-free TV viewing experience, that will allow consumers to turn on or off their television, change inputs, fast forward.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Start Our beautiful App -->
+  <section class="py-7 overflow-hidden">
+    <div class="page-header min-vh-50 bg-gradient-dark"></div>
+    <div class="bg-gradient-primary position-relative mx-xxl-8 mx-xl-4 mx-lg-3 mx-3 py-5 z-index-2 border-radius-xl mt-n11">
+      <img src="/assets/img/shapes/waves-white.svg" alt="pattern-lines" class="position-absolute opacity-6 start-0 top-0 w-100">
+      <div class="container position-relative">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 col-md-8 text-start py-5 me-auto position-relative">
+            <div class="position-relative">
+              <h1 class="mt-4 text-white">Our beautiful App</h1>
+              <p class="lead text-white">An arrangement you make to have a hotel room, tickets, etc. at a particular time in the future:</p>
+              <div class="row justify-content-start mt-4">
+                <div class="col-lg-5 col-md-8 pe-lg-0 mt-2">
+                  <a href="javascript:;">
+                    <img class="" src="/assets/img/logos/appstore.png">
+                  </a>
+                </div>
+                <div class="col-lg-5 col-4 col-md-8 pe-lg-0 mt-2">
+                  <a href="javascript:;">
+                    <img class="" src="/assets/img/logos/google-play.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-absolute end-0 bottom-0 mb-n6 me-xl-n8 me-lg-n5 me-n7 z-index-2 w-25 d-md-block d-none">
+          <img class="w-100" src="../../assets/img/phones.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  </main>
+
+  <footer class="footer pb-5 pt-10 bg-light mt-n8 position-relative">
+    <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+      <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>wave-down</title>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g fill="#FFFFFF" fill-rule="nonzero">
+            <g id="wave-down">
+              <path d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z" id="Path-Copy-2" transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) "></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h6 class="font-weight-bolder mb-lg-4 mb-3">Shayakah</h6>
+        </div>
+        <div class="col-lg-6 text-center">
+          <ul class="nav flex-row align-items-center mb-5 mt-sm-0 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Services
+              </a>
+            </li>
+          </ul>
+          <p class="mb-0">
+            All rights reserved. Copyright © <script>
+            document.write(new Date().getFullYear())
+          </script> Shayakah
+          </p>
+
+        </div>
+        <div class="col-lg-3 text-end">
+          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="fab fa-youtube text-lg"></span>
+          </a>
+          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="fab fa-twitter text-lg"></span>
+          </a>
+          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="fab fa-facebook text-lg"></span>
+          </a>
+          <a href="javascript:;" target="_blank" class="text-secondary">
+            <span class="fab fa-instagram text-lg"></span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- -------- END FOOTER ------- -->
+
+
+
+  
+<!-- Social media -->
+<!-- 
+  <section class="py-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-10 ms-auto me-auto text-center">
+          <div class="p-3 info-hover-warning">
+            <div class="icon icon-shape bg-gradient-primary shadow icon-shape-circle text-primary">
+              <i class="fa fa-cogs"></i>
+            </div>
+          </div>
+          <h3 class="text-gradient text-primary mb-0 mt-4">Beware The Components</h3>
+          <h3>How To Handle Them</h3>
+          <p>We’re constantly trying to express ourselves and actualize our dreams. Don't stop.</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 ms-auto my-auto">
+          <div class="cursor-pointer">
+            <div class="card card-background tilt" data-tilt="">
+              <div class="full-background" style="background-image: url('/assets/img/shayakah/facebook_shayakah.jpg')"></div>
+              <div class="card-body pt-7 text-center">
+                <div class="icon icon-lg up mb-3">
+                  <svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>chart-pie-35</title>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g transform="translate(-1720.000000, -742.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <g transform="translate(1716.000000, 291.000000)">
+                          <g transform="translate(4.000000, 451.000000)">
+                            <path d="M21.6666667,18.3333333 L39.915,18.3333333 C39.11,8.635 31.365,0.89 21.6666667,0.085 L21.6666667,18.3333333 Z" opacity="0.602864583"></path>
+                            <path d="M20.69,21.6666667 L7.09833333,35.2583333 C10.585,38.21 15.085,40 20,40 C30.465,40 39.0633333,31.915 39.915,21.6666667 L20.69,21.6666667 Z"></path>
+                            <path d="M18.3333333,19.31 L18.3333333,0.085 C8.085,0.936666667 0,9.535 0,20 C0,24.915 1.79,29.415 4.74166667,32.9016667 L18.3333333,19.31 Z"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <h1 class="text-white up mb-0">Search and Discover!</h1>
+                <p class="lead up">Website visitors</p>
+                <button type="button" class="btn btn-white btn-lg mt-3 up">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 me-auto my-auto ms-md-5">
+          <div class="p-3 info-horizontal d-flex">
+            <div>
+              <h5>1. Listen to Social Conversations</h5>
+              <p>
+                Gain access to the demographics, psychographics, and location of unique people who are interested and talk about your brand.
+              </p>
+            </div>
+          </div>
+          <div class="p-3 info-horizontal d-flex">
+            <div>
+              <h5>2. Performance Analyze</h5>
+              <p>
+                Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights from easy-to-use reports.
+              </p>
+            </div>
+          </div>
+          <div class="p-3 info-horizontal d-flex">
+            <div>
+              <h5>3. Social Conversions</h5>
+              <p>
+                Track actions taken on your website that originated from social, and understand the impact on your bottom line.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="horizontal dark my-sm-6 my-3 mx-7">
+      <div class="row">
+        <div class="col-md-5 ms-auto my-auto">
+          <div class="p-3 info-horizontal d-flex">
+            <div>
+              <h5>1. Always In Sync</h5>
+              <p>
+                No matter where you are, Trello stays in sync across all of your devices.
+              </p>
+            </div>
+          </div>
+          <div class="p-3 info-horizontal d-flex">
+            <div>
+              <h5>2. Work With Any Team</h5>
+              <p>
+                Whether it’s for work or even the next family vacation, Trello helps your team.
+              </p>
+            </div>
+          </div>
+          <div class="p-3 info-horizontal d-flex">
+            <div>
+              <h5>3. A Productivity Platform</h5>
+              <p>
+                Integrate the apps your team already uses directly into your workflow.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 me-auto my-auto ms-md-5">
+          <div class="cursor-pointer">
+            <div class="card card-background tilt" data-tilt="">
+              <div class="full-background" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/coffee-shop.jpg')"></div>
+              <div class="card-body pt-7 text-center">
+                <div class="icon icon-lg up mb-3">
+                  <svg width="40px" height="40px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>customer-support</title>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g transform="translate(-1717.000000, -291.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <g transform="translate(1716.000000, 291.000000)">
+                          <g transform="translate(1.000000, 0.000000)">
+                            <path d="M45,0 L26,0 C25.447,0 25,0.447 25,1 L25,20 C25,20.379 25.214,20.725 25.553,20.895 C25.694,20.965 25.848,21 26,21 C26.212,21 26.424,20.933 26.6,20.8 L34.333,15 L45,15 C45.553,15 46,14.553 46,14 L46,1 C46,0.447 45.553,0 45,0 Z" opacity="0.59858631"></path>
+                            <path d="M22.883,32.86 C20.761,32.012 17.324,31 13,31 C8.676,31 5.239,32.012 3.116,32.86 C1.224,33.619 0,35.438 0,37.494 L0,41 C0,41.553 0.447,42 1,42 L25,42 C25.553,42 26,41.553 26,41 L26,37.494 C26,35.438 24.776,33.619 22.883,32.86 Z"></path>
+                            <path d="M13,28 C17.432,28 21,22.529 21,18 C21,13.589 17.411,10 13,10 C8.589,10 5,13.589 5,18 C5,22.529 8.568,28 13,28 Z"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <h1 class="text-white up mb-0">Talk and Meet!</h1>
+                <p class="lead up">Social activities</p>
+                <button type="button" class="btn btn-white btn-lg mt-3 up">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+
+
+
+
+
+
+
+
+  <!-- JS Files   -->
+  <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="/assets/js/plugins/typedjs.js"></script>
+  <script src="/assets/js/plugins/parallax.min.js"></script>
+  <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/glidejs.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/anime.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/chartjs.min.js"></script>
+  <script src="/assets/js/soft-design-system-pro.min.js?v=1.1.0" type="text/javascript"></script>
+  <script src="/assets/ec30e10b/jquery.js" type="e0a428d916c27f844cfd3ee8-text/javascript"></script>
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" type="e0a428d916c27f844cfd3ee8-text/javascript"></script>
+  <script src="/assets/js/plugins/tilt.min.js" type="e0a428d916c27f844cfd3ee8-text/javascript"></script>
+
+  <script src="/assets/js/soft-design-system-pro.min.js?v=1.1.0" type="text/javascript"></script>
+  <script src="/assets/js/plugins/tilt.min.js"></script>
+
+
+
+</body>
+
+</html>
+
+
