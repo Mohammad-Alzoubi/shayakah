@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="/assets/img/shayakah/logo-shayakah.png">
+  <title>Shayakah</title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <!-- Nucleo Icons -->
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link id="pagestyle" href="/assets/css/soft-design-system-pro.css?v=1.1.0" rel="stylesheet" />
+  <link href="/assets/css/nucleo-icons.css" rel="stylesheet">
+  <link href="/assets/css/nucleo-svg.css" rel="stylesheet">
+  <link href="/assets/css/soft-design-system-pro.css" rel="stylesheet">
+  <link href="/assets/css/site.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+  <style>
+    #coin {
+      position: relative;
+      width: 5rem;
+      height: 3rem;
+      transform-style: preserve-3d;
+      -webkit-transform-style: preserve-3d;
+      -webkit-perspective: 1000px;
+      animation: turn 10s infinite forwards;
+      animation-iteration-count: 2;
+      animation-delay: 3s;
+    }
+
+    #coin div {
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      background-size: contain;
+      position: absolute;
+    }
+
+    .heads {
+      /*width: 3rem !important;*/
+      /*height: 2rem !important;*/
+      background-image: url("/assets/img/shayakah/logo-shayakah.png");
+      background-repeat: no-repeat;
+    }
+
+    .tails {
+      background-image: url("/assets/img/shayakah/logo-shayakah.png");
+      background-repeat: no-repeat;
+      transform: rotateY(180deg);
+    }
+
+    @keyframes turn {
+      0% {
+        transform: rotateY(0deg);
+      }
+
+      25% {
+        transform: rotateY(180deg);
+      }
+
+      75% {
+        transform: rotateY(180deg);
+      }
+
+      100% {
+        transform: rotateY(0deg);
+      }
+    }
+  </style>
+
+  <header class="fixed-top z-index-sticky top-0">
+    <nav class="navbar navbar-expand-lg blur-modern z-index-3 navbar-nav navbar-nav-hover mx-auto">
+      <div class="container px-0">
+        <a class="navbar-brand font-weight-bolder ms-sm-3"
+          href="https://demos.creative-tim.com/marketplace/soft-ui-design-system-pro/presentation.html "
+          rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+          <div id="coin">
+            <div id="heads" class="heads"></div>
+            <div id="tails" class="tails"></div>
+          </div>
+        </a>
+        <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mt-2">
+                        <span class="navbar-toggler-bar bar1"></span>
+                        <span class="navbar-toggler-bar bar2"></span>
+                        <span class="navbar-toggler-bar bar3"></span>
+                    </span>
+        </button>
+        <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+          <ul class="navbar-nav navbar-nav-hover mx-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Services
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex"><a class="btn btn-sm bg-shayakah-light mb-0 me-2" href="#">Login</a></div>
+          <div class="d-flex"><a class="btn btn-sm bg-shayakah-dark mb-0 me-1"  href="#">Signup</a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main role="main" class="flex-shrink-0">
+<!--
+    <header>
+      <div class="page-header min-vh-85">
+        <div class="oblique position-absolute top-0 h-100 d-md-block d-none">
+          <div class="oblique-image bg-cover position-absolute fixed-top ms-auto h-100 z-index-0 ms-n6" style="background-image:url('https://yshere.com/img/hero-1.jpg')"></div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-7 d-flex justify-content-center text-md-start text-center flex-column mt-sm-4 mt-6">
+              <h1>
+                <span class="text-gradient text-warning d-block">Try a new experience</span>
+                for your shoppers
+              </h1>
+              <p class="lead pe-md-5 me-md-5">Extensive ecommerce services through Mobile App</p>
+              <div class="buttons">
+                <button type="button" class="btn bg-shayakah-dark mt-4">Try Now</button>
+                <button type="button" class="btn text-muted shadow-none mt-4">Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+-->
+
+    <!-- -------- START HEADER 2 ------- -->
+    <header style="margin-top: 8rem;">
+      <div class="page-header min-vh-85">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 my-auto col-md-7 d-flex justify-content-center text-md-start text-center flex-column mt-sm-4 mt-6">
+              <h1 class="text-gradient text-warning mb-0">Try a new experience</h1>
+              <h1 class="mb-4">for your shoppers</h1>
+              <p class="lead">Extensive ecommerce services through Mobile App.</p>
+              <div class="buttons">
+                <button type="button" class="btn bg-shayakah-dark mt-4">Try Now</button>
+                <button type="button" class="btn text-muted shadow-none mt-4">Read more</button>
+              </div>
+            </div>
+            <div class="col-lg-7 ps-5 pe-0">
+              <div class="row">
+                <div class="col-lg-3 col-6">
+                  <img class="w-100 border-radius-lg shadow mt-0 mt-lg-7" src="/assets/img/shayakah/image-shayakah/man4.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-6">
+                  <img class="w-100 border-radius-lg shadow" src="/assets/img/shayakah/image-shayakah/children4.jpg" alt="">
+                  <img class="w-100 border-radius-lg shadow mt-4" src="/assets/img/shayakah/image-shayakah/man2.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-6">
+                  <img class="w-100 border-radius-lg shadow mt-0 mt-lg-5" src="/assets/img/shayakah/image-shayakah/woman1.png" alt="">
+                  <img class="w-100 border-radius-lg shadow mt-4" src="/assets/img/shayakah/image-shayakah/woman7.jpg" alt="">
+                </div>
+                <div class="col-lg-3 col-6">
+                  <img class="w-100 border-radius-lg shadow mt-3" src="/assets/img/shayakah/image-shayakah/bag2.jpg" alt="">
+                  <img class="w-100 border-radius-lg shadow mt-4" src="/assets/img/shayakah/image-shayakah/accessories.webp" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- -------- END HEADER 2 ------- -->
+
+
+
+    <section class="py-3">
+      <div class="container py-8">
+        <div class="row align-items-center">
+          <div class="col-md-12 mb-md-0 mb-4 text-center">
+            <h2 class="mb-3 text-dark">
+              An exceptional and unforgettable experience
+            </h2>
+            <p class="lead mb-md-5 mb-4">
+              Give your shoppers a moment to remember based on their behaviour
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-2">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-lg-6">
+            <h3 class="display-6">Boost Your Sales</h3>
+            <p class="lead">
+              Get noticed whatever you sell products or services
+            </p>
+          </div>
+        </div>
+        <div class="row justify-space-between py-6">
+          <div class="col-md-5 mx-auto">
+            <div class="card card-background mt-md-0 mt-5" data-tilt>
+              <div class="full-background" style="background-image: url(https://yshere.com/img/69-device.png);background-size:60%;background-position:50% 15%;background-color: rgb(254,184,130);;background-repeat: no-repeat;">
+              </div>
+              <div class="card-body pt-10 text-center">
+                <h3 class="text-white pt-5 up mb-0 text-shadow-3">It starts with a website</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mx-auto">
+            <div class="card card-background mt-md-0 mt-5" data-tilt>
+              <div class="full-background" style="background-image: url(https://yshere.com/img/68-device.png);background-color: rgb(233,112,128);background-size:50%;background-position:50% 15%;background-repeat: no-repeat;">
+              </div>
+              <div class="card-body pt-10 text-center">
+                <h3 class="text-white pt-5 up mb-0">Manage Inventory</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-space-between py-4">
+          <div class="col-md-5 mx-auto">
+            <div class="card card-background mt-md-0 mt-5" data-tilt>
+              <div class="full-background"
+                   style="background-image: url(https://yshere.com/img/67-device.png);background-color: rgb(248 216 72);background-size:55%;background-position:50% 15%;background-repeat: no-repeat;">
+              </div>
+              <div class="card-body pt-10 text-center">
+                <h3 class="text-dark pt-5 up mb-0">Accept online payments</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mx-auto">
+            <div class="card card-background mt-md-0 mt-5" data-tilt>
+              <div class="full-background"
+                   style="background-image: url(https://yshere.com/img/70-device.png);background-color: rgb(239,231,220);background-size:60%;background-position:50% 15%;background-repeat: no-repeat;">
+              </div>
+              <div class="card-body pt-10 text-center">
+                <h3 class="text-dark pt-5 up mb-0">Deliver & track orders</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--    Sell on your App-->
+    <section class="py-3">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-8 mx-auto mt-5">
+            <div class="card card-background min-vh-70">
+              <div class="full-background" style="background-image: url(https://yshere.com/img/night-mobile.jpg);"></div>
+              <div class="card-body pt-10">
+                <h2 class="text-white">Sell on your App</h2>
+                <p>Run your business wherever business takes you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="features-3 mt-n10 py-7">
+      <div class="container">
+        <div class="row text-center justify-content-center pt-10">
+          <div class="col-lg-6">
+            <h2>Elevate Your Style, Delight Your Senses </h2>
+            <p>
+              Explore our curated collections of fashion, accessories, and fragrances, designed to enhance your lifestyle.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="row mt-5">
+          <div class="col-lg-4 mb-lg-0 mb-4">
+            <!-- Start Card Blog Fullbackground - text centered -->
+            <a href="javascript:;">
+              <div class="card card-background move-on-hover mb-4">
+                <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/man5.jpg')"></div>
+                <div class="card-body pt-12  ">
+                  <h4 class="text-white">Man</h4>
+                  <p>Elevate your masculinity with our versatile men's collection, offering classic and contemporary fashion for every occasion.</p>
+                </div>
+              </div>
+            </a>
+            <!-- End Card Blog Fullbackground - text centered -->
+            <!-- Start Card Blog Fullbackground - text centered -->
+            <a href="javascript:;">
+              <div class="card card-background move-on-hover">
+                <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/children6.jpg')"></div>
+                <div class="card-body pt-12">
+                  <h4 class="text-white">Children</h4>
+                  <p>Explore vibrant and comfortable clothing for kids, designed to inspire their curiosity and creativity.</p>
+                </div>
+              </div>
+            </a>
+            <!-- End Card Blog Fullbackground - text centered -->
+          </div>
+          <div class="col-lg-4 mb-lg-0 mb-4">
+            <!-- Start Card Blog Fullbackground - text centered -->
+            <a href="javascript:;">
+              <div class="card card-background move-on-hover mb-4">
+                <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/woman1.png')"></div>
+                <div class="card-body pt-12">
+                  <h4 class="text-white">Woman</h4>
+                  <p>Discover a world of elegance and empowerment in our women's collection, where style meets confidence.</p>
+                </div>
+              </div>
+            </a>
+            <!-- End Card Blog Fullbackground - text centered -->
+            <!-- Start Card Blog Fullbackground - text centered -->
+            <a href="javascript:;">
+              <div class="card card-background move-on-hover">
+                <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/accessories.webp')"></div>
+                <div class="card-body pt-12">
+                  <h4 class="text-white">Accessories</h4>
+                  <p>Smart money is just dumb money that’s been through a crash.</p>
+                </div>
+              </div>
+            </a>
+            <!-- End Card Blog Fullbackground - text centered -->
+          </div>
+          <div class="col-lg-4">
+            <!-- Start Card Blog Fullbackground - text centered -->
+            <a href="javascript:;">
+              <div class="card card-background move-on-hover mb-4">
+                <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/bag5.jpg')"></div>
+                <div class="card-body pt-12">
+                  <h4 class="text-white">Bag</h4>
+                  <p>Carry your essentials in style with our exquisite range of bags, blending fashion and functionality seamlessly</p>
+                </div>
+              </div>
+            </a>
+            <!-- End Card Blog Fullbackground - text centered -->
+            <!-- Start Card Blog Fullbackground - text centered -->
+            <a href="javascript:;">
+              <div class="card card-background move-on-hover">
+                <div class="full-background" style="background-image: url('/assets/img/shayakah/image-shayakah/parfan.jpg')"></div>
+                <div class="card-body pt-12">
+                  <h4 class="text-white">Perfume</h4>
+                  <p>Evoke emotions and leave a lasting impression with our curated selection of captivating fragrances.</p>
+                </div>
+              </div>
+            </a>
+            <!-- End Card Blog Fullbackground - text centered -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="py-5 pt-8">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-lg-6">
+            <h2>Your Premier Shopping Destination</h2>
+            <p>
+              Discover the perfect blend of fashion, affordability, and customer care – your one-stop shop for satisfaction.
+            </p>
+          </div>
+        </div>
+
+        <section class="py-7 position-relative">
+          <div id="carousel-testimonials" class="carousel slide carousel-team">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-5 me-lg-auto position-relative">
+                      <h6 class="opacity-7 text-uppercase font-weight-bolder text-sm fadeIn4 fadeInBottom">First Step</h6>
+                      <h1 class="text-dark display-3 font-weight-bolder fadeIn2 fadeInBottom">Quality Selection</h1>
+                      <p class="my-4 lead text-dark fadeIn2 fadeInBottom">
+                        Explore our curated collection of high-quality products, handpicked for style, durability, and exceptional value.
+                      </p>
+                    </div>
+                    <div class="col-md-5 ms-lg-auto">
+                      <div class="p-3">
+                        <img class="w-100 border-radius-md max-height-600 fadeIn2 fadeInBottom" src="/assets/img/jordan.jpg" alt="First slide">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-5 me-lg-auto position-relative">
+                      <h6 class="opacity-7 text-uppercase font-weight-bolder text-sm fadeIn4 fadeInBottom">Second Step</h6>
+                      <h1 class="text-dark display-3 font-weight-bolder fadeIn2 fadeInBottom">Competitive Pricing</h1>
+                      <p class="my-4 lead text-dark fadeIn2 fadeInBottom">
+                        Shop confidently with our competitive prices, offering exceptional value for the quality you deserve.
+                      </p>
+                    </div>
+                    <div class="col-md-5 ms-lg-auto">
+                      <div class="p-3">
+                        <img class="w-100 border-radius-md max-height-600 fadeIn2 fadeInBottom" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-light.jpg" alt="Second slide">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-5 me-lg-auto position-relative">
+                      <h6 class="opacity-7 text-uppercase font-weight-bolder text-sm fadeIn4 fadeInBottom">Third Step</h6>
+                      <h1 class="text-dark display-3 font-weight-bolder fadeIn2 fadeInBottom">Secure Shopping</h1>
+                      <p class="my-4 lead text-dark fadeIn2 fadeInBottom">
+                        Enjoy worry-free shopping with our secure payment methods and data protection, prioritizing your online safety.
+                      </p>
+                    </div>
+                    <div class="col-md-5 ms-lg-auto">
+                      <div class="p-3">
+                        <img class="w-100 border-radius-md max-height-600 fadeIn2 fadeInBottom" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/circle-guy.jpg" alt="Second slide">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-5 me-lg-auto position-relative">
+                      <h6 class="opacity-7 text-uppercase font-weight-bolder text-sm fadeIn4 fadeInBottom">Fourth Step</h6>
+                      <h1 class="text-dark display-3 font-weight-bolder fadeIn2 fadeInBottom">Customer Satisfaction Guarantee</h1>
+                      <p class="my-4 lead text-dark fadeIn2 fadeInBottom">
+                        We're committed to your satisfaction. Experience hassle-free returns and top-notch customer service at every step.
+                      </p>
+                    </div>
+                    <div class="col-md-5 ms-lg-auto">
+                      <div class="p-3">
+                        <img class="w-100 border-radius-md max-height-600 fadeIn2 fadeInBottom" src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-icecream.jpg" alt="Second slide">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="position-relative mt-n6">
+              <a class="carousel-control-prev text-dark position-absolute bottom-0 start-0" href="#carousel-testimonials" role="button" data-bs-slide="prev">
+                <i class="fas fa-2x fa-chevron-left position-absolute start-0 ms-3"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next text-dark position-absolute bottom-0 start-0 ms-4" href="#carousel-testimonials" role="button" data-bs-slide="next">
+                <i class="fas fa-2x fa-chevron-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="row mt-10">
+            <div class="col-lg-3 col-6 mb-lg-0 mb-4">
+              <a href="javascript:;" class="text-lg text-gradient text-primary h3 ps-3 active" data-bs-target="#carousel-testimonials" data-bs-slide-to="0">
+                <span>01</span>
+                <span class="ms-2">Quality Selection</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-0 mb-4">
+              <a href="javascript:;" class="text-lg text-gradient text-primary h3" data-bs-target="#carousel-testimonials" data-bs-slide-to="1">
+                <span>02</span>
+                <span class="ms-2">Competitive Pricing</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-0 mb-4">
+              <a href="javascript:;" class="text-lg text-gradient text-primary h3" data-bs-target="#carousel-testimonials" data-bs-slide-to="2">
+                <span>03</span>
+                <span class="ms-2">Secure Shopping</span>
+              </a>
+            </div>
+            <div class="col-lg-3 col-6 mb-lg-0 mb-4">
+              <a href="javascript:;" class="text-lg text-gradient text-primary h3" data-bs-target="#carousel-testimonials" data-bs-slide-to="3">
+                <span>04</span>
+                <span class="ms-2">Customer Satisfaction Guarantee</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="page-header min-vh-50" style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/glass-wall.jpg')">
+        <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="position-absolute w-100 z-index-1 bottom-0">
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            </defs>
+            <g class="moving-waves">
+              <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"></use>
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+              <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+              <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+              <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ms-auto me-auto mt-7">
+            <h6 class="opacity-7 text-uppercase font-weight-bolder text-sm">Our effort</h6>
+            <h3 class="mb-4">The powerfull design system</h3>
+            <p class="text-dark">
+              The way to survive in modern society is to be an ascetic. It is to retreat from society. There’s too much society everywhere you go…The only solution is turn it off.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Start Our beautiful App -->
+    <section class="py-7 overflow-hidden">
+      <div class="page-header min-vh-50 bg-gradient-dark"></div>
+      <div class="bg-gradient-primary position-relative mx-xxl-8 mx-xl-4 mx-lg-3 mx-3 py-5 z-index-2 border-radius-xl mt-n11">
+        <img src="/assets/img/shapes/waves-white.svg" alt="pattern-lines" class="position-absolute opacity-6 start-0 top-0 w-100">
+        <div class="container position-relative">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-8 text-start py-5 me-auto position-relative">
+              <div class="position-relative">
+                <h1 class="mt-4 text-white">Our beautiful App</h1>
+                <p class="lead text-white">An arrangement you make to have a hotel room, tickets, etc. at a particular time in the future:</p>
+                <div class="row justify-content-start mt-4">
+                  <div class="col-lg-5 col-4 pe-lg-0">
+                    <a href="javascript:;">
+                      <img class="" src="/assets/img/logos/appstore.png">
+                    </a>
+                  </div>
+                  <div class="col-lg-5 col-4 pe-lg-0">
+                    <a href="javascript:;">
+                      <img class="" src="/assets/img/logos/google-play.png">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position-absolute end-0 bottom-0 mb-n6 me-xl-n8 me-lg-n5 me-n7 z-index-2 w-25 d-md-block d-none">
+            <img class="w-100" src="../../assets/img/phones.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our beautiful App -->
+
+
+
+    <section class="pb-7">
+      <div class="position-relative m-3">
+        <div class="container pb-lg-9 pb-10 postion-relative z-index-2">
+          <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+              <h2>Choose your plan</h2>
+              <p class="text-muted">You have unlimited products and Technical Support on each package.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-n8">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-lg-0 mb-4">
+              <div class="card">
+                <div class="card-header py-2">
+                  <span class="badge rounded-pill bg-light text-dark">Starter</span>
+                  <h3 class="font-weight-bold mt-2">
+                    Free
+                  </h3>
+                  <p class="text-muted">Benefit from the Shayakah dashboard to build your customized</p>
+                </div>
+                <div class="card-body text-lg-start text-center pt-0">
+                  <a href="javascript:;"
+                     class="btn btn-icon bg-gray-800 text-white d-lg-block mt-3 mb-0">
+                    Check it out
+                    <i class="fas fa-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-lg-0 mb-4">
+              <div class="card">
+                <div class="card-header py-2">
+                  <span class="badge rounded-pill bg-light text-dark">Pro</span>
+                  <h3 class="font-weight-bold mt-2">
+                    <small>$</small>49/month
+                  </h3>
+                  <p class="text-muted">Benefit from the Shayakah dashboard to build your customized</p>
+                </div>
+                <div class="card-body text-lg-start text-center pt-0">
+                  <a href="javascript:;"
+                     class="btn btn-icon bg-gradient-warning d-lg-block mt-3 mb-0">
+                    Check it out
+                    <i class="fas fa-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-lg-0 mb-4">
+              <div class="card">
+                <div class="card-header py-2">
+                  <span class="badge rounded-pill bg-light text-dark">Premium</span>
+                  <h3 class="font-weight-bold mt-2">
+                    <small>$</small>99/month
+                  </h3>
+                  <p class="text-muted">Benefit from the Shayakah dashboard to build your customized</p>
+                </div>
+                <div class="card-body text-lg-start text-center pt-0">
+                  <a href="javascript:;"
+                     class="btn btn-icon bg-gray-700 text-white d-lg-block mt-3 mb-0">
+                    Check it out
+                    <i class="fas fa-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- -------- START FOOTER ------- -->
+  <div class="position-relative mt-8">
+    <div class="container">
+      <div class="card bg-gradient-primary z-index-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+              <h3 class="text-white">Be the first who see the news</h3>
+              <p class="text-white opacity-8 mb-5 pe-5">
+                Your company may not be in the software business,
+                but eventually, a software company will be in your business.
+              </p>
+              <div class="row">
+                <div class="col-sm-5 ms-auto">
+                  <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input type="text" class="form-control mb-sm-0 mb-2" placeholder="Email Here..." >
+                  </div>
+                </div>
+                <div class="col-sm-3 me-auto text-start">
+                  <button type="button" class="btn bg-white w-100 mb-0 h-100 position-relative z-index-2">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer pb-5 pt-10 bg-light mt-n8 position-relative">
+    <div class="position-absolute w-100 z-inde-1 top-0 mt-n3">
+      <svg width="100%" viewBox="0 -2 1920 157" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>wave-down</title>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g fill="#FFFFFF" fill-rule="nonzero">
+            <g id="wave-down">
+              <path d="M0,60.8320331 C299.333333,115.127115 618.333333,111.165365 959,47.8320321 C1299.66667,-15.5013009 1620.66667,-15.2062179 1920,47.8320331 L1920,156.389409 L0,156.389409 L0,60.8320331 Z" id="Path-Copy-2" transform="translate(960.000000, 78.416017) rotate(180.000000) translate(-960.000000, -78.416017) "></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h6 class="font-weight-bolder mb-lg-4 mb-3">Shayakah</h6>
+        </div>
+        <div class="col-lg-6 text-center">
+          <ul class="nav flex-row align-items-center mb-5 mt-sm-0 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Services
+              </a>
+            </li>
+          </ul>
+          <p class="mb-0">
+            All rights reserved. Copyright © <script>
+            document.write(new Date().getFullYear())
+          </script> Shayakah
+          </p>
+
+        </div>
+        <div class="col-lg-3 text-end">
+          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="fab fa-youtube text-lg"></span>
+          </a>
+          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="fab fa-twitter text-lg"></span>
+          </a>
+          <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="fab fa-facebook text-lg"></span>
+          </a>
+          <a href="javascript:;" target="_blank" class="text-secondary">
+            <span class="fab fa-instagram text-lg"></span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- -------- END FOOTER ------- -->
+
+
+
+
+
+
+
+
+
+
+  <!-- JS Files   -->
+  <script src="/assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="/assets/js/plugins/typedjs.js"></script>
+  <script src="/assets/js/plugins/parallax.min.js"></script>
+  <script src="/assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/glidejs.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/anime.min.js" type="text/javascript"></script>
+  <script src="/assets/js/plugins/chartjs.min.js"></script>
+  <script src="/assets/js/soft-design-system-pro.min.js?v=1.1.0" type="text/javascript"></script>
+  <script src="/assets/ec30e10b/jquery.js" type="e0a428d916c27f844cfd3ee8-text/javascript"></script>
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" type="e0a428d916c27f844cfd3ee8-text/javascript"></script>
+  <script src="/assets/js/plugins/tilt.min.js" type="e0a428d916c27f844cfd3ee8-text/javascript"></script>
+
+  <script src="/assets/js/soft-design-system-pro.min.js?v=1.1.0" type="text/javascript"></script>
+  <script src="/assets/js/plugins/tilt.min.js"></script>
+
+
+
+</body>
+
+</html>
+
+
